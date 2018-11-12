@@ -5,19 +5,96 @@
 
 body {
   background: #fcc;
-} 
+}
+
+.menu{
+  background:  #ff0066;
+  color: white
+  line-height: 2em;
+}
+
+.title  {  background-color: #000000;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    color: white    }
+
+    .list {
+        display: flex;
+        flex-wrap: nowrap; /* A container with "flex-wrap:
+            nowrap;" will never wrap its items.  */
+        background-color: #000000;
+        justify-content: space-between; /* istribute items: first/last are
+    left/right others are equally between  */
+        flex-direction: row;
+
+    }
+
+        .list > a {
+            background-color: #ffffff;
+            width: 75px;
+            margin: 10px;
+            text-align: center;
+            line-height: 55px;
+            font-size: 20px;
+            color: black
+        }
+
+.list{
+  display: none;      /* will remove menu section when the screen is wider than */
+}
+
+.menu:hover  {   /* hover over menu highlighted pink   */
+  background-color: #ffcce0
+}
+
+   /* .menu:hover + .list {    hover over menu and nav bar opens  
+  display: block;
+
+}  */
 
 
 
 /* TABLET STYLES */
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 500px) {   /* applies to screens wider than 499px */
 
-  /* applies to screens wider than 499px */
-  
+
+
   body {
     background: #cfc;
-  } 
+  }
+
+  .list {   /*  */
+      display: flex;
+      flex-wrap: nowrap; /* A container with "flex-wrap:
+          nowrap;" will never wrap its items.  */
+      background-color: #000000;
+      justify-content: space-between; /* istribute items: first/last are
+  left/right others are equally between  */
+      flex-direction: row;
+
+  }
+
+      .list > a {  /*  */
+          background-color: #ffffff;
+          width: 75px;
+          margin: 10px;
+          text-align: center;
+          line-height: 55px;
+          font-size: 20px;
+          color: black
+      }
+
+
+.menu{  /*  */
+  display: none;      /* will remove menu section when the screen is wider than */
+}
+
+
+
+
+
 }
 
 
@@ -30,5 +107,5 @@ body {
 
   body {
     background: #ccf;
-  } 
+  }
 }
